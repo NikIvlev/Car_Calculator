@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a73a8383-856f-4f06-b403-63ee4d770b13" name="Changes" comment="Add method add_car">
+    <list default="true" id="a73a8383-856f-4f06-b403-63ee4d770b13" name="Changes" comment="Create new py.file with api's list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.py" afterDir="false" />
     </list>
@@ -126,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722281975330</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create new py.file with api's list">
+      <option name="closed" value="true" />
+      <created>1722282288295</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722282288295</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -135,6 +143,7 @@
     <MESSAGE value="add 3 functions: static, dynamic and common year_cast&#10;create new class electric car" />
     <MESSAGE value="Add few metods into class Calculator" />
     <MESSAGE value="Add method add_car" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add method add_car" />
+    <MESSAGE value="Create new py.file with api's list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new py.file with api's list" />
   </component>
 </project>

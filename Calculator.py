@@ -1,7 +1,7 @@
 class Calculator:
     def __init__(self,mileage=15000):
-        self.cars = []
         self.mileage = mileage
+        self.cars = {}          # Car: Year price
 
     def get_gas_price(self):
         #TODO Get price from api
@@ -10,6 +10,14 @@ class Calculator:
     def get_power_price(self):
         #TODO Get price from API
         return 1.2
+
+    def add_car(self, car):
+        if isinstance(car, ElectricCar)
+            fuel_cost = self.get_power_price()
+        else
+            fuel_cost = self.get_gas_price()
+        self.cars[car] = car.year_cost(self.mileage, )
+
 
 class Car:
     def __init__(self,name:str,price:int,fuel_economy:float,service_cost:int,insurance_cost:int):
@@ -21,7 +29,7 @@ class Car:
 
     def static_year_cost(self):
         return self.service_cost + self.insurance_cost
-    def dynamic_year_cost(self, mileage:int):
+    def dynamic_year_cost(self, mileage:int, fuel_price):
         return self.fuel_economy * mileage / 100 * fuel_price
 
     def year_cost(self, mileage:int, fuel_price: float):

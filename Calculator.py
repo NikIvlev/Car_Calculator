@@ -1,6 +1,15 @@
 class Calculator:
-    def __init__(self):
+    def __init__(self,mileage=15000):
         self.cars = []
+        self.mileage = mileage
+
+    def get_gas_price(self):
+        #TODO Get price from api
+        return 8
+
+    def get_power_price(self):
+        #TODO Get price from API
+        return 1.2
 
 class Car:
     def __init__(self,name:str,price:int,fuel_economy:float,service_cost:int,insurance_cost:int):
@@ -20,9 +29,12 @@ class Car:
 
 
 class ElectricCar(Car):
-    def __init__(self, name: str, price: int, service_cost: int, insurance_cost: int, power_consumption:int):
-        super().__init__(name, price, 0, service_cost, insurance_cost)
+    def __init__(self, name: str, price: int, fuel_economy:float, service_cost: int, insurance_cost: int, power_consumption:int):
+        super().__init__(name=name, price=price, fuel_economy=0, service_cost=0, insurance_cost=insurance_cost)
         self.power_consumption = power_consumption #WT / 1km
+
+    def dynamic_year_cost(self, mileage: int, kilowatt_price:float):
+        return self.power_consumption * mileage / 1000 * kilowatt_price
 
 
 

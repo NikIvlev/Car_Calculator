@@ -1,21 +1,12 @@
+from apis import get_gas_price, get_power_price
+
 class Calculator:
     def __init__(self,mileage=15000):
         self.mileage = mileage
         self.cars = {}          # Car: Year price
 
-    def get_gas_price(self):
-        #TODO Get price from api
-        return 8
-
-    def get_power_price(self):
-        #TODO Get price from API
-        return 1.2
 
     def add_car(self, car):
-        if isinstance(car, ElectricCar)
-            fuel_cost = self.get_power_price()
-        else
-            fuel_cost = self.get_gas_price()
         self.cars[car] = car.year_cost(self.mileage, )
 
 
